@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B64B29F25F32EBE004DDF95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B29E25F32EBE004DDF95 /* AppDelegate.swift */; };
+		3B64B2A125F32EBE004DDF95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2A025F32EBE004DDF95 /* SceneDelegate.swift */; };
+		3B64B2A325F32EBE004DDF95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2A225F32EBE004DDF95 /* ViewController.swift */; };
+		3B64B2A625F32EBE004DDF95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B64B2A425F32EBE004DDF95 /* Main.storyboard */; };
+		3B64B2A925F32EBE004DDF95 /* EasyBooks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2A725F32EBE004DDF95 /* EasyBooks.xcdatamodeld */; };
+		3B64B2AB25F32EBF004DDF95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B64B2AA25F32EBF004DDF95 /* Assets.xcassets */; };
+		3B64B2AE25F32EBF004DDF95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B64B2AC25F32EBF004DDF95 /* LaunchScreen.storyboard */; };
+		3B64B2B925F32EBF004DDF95 /* EasyBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2B825F32EBF004DDF95 /* EasyBooksTests.swift */; };
+		3B64B2C425F32EBF004DDF95 /* EasyBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2C325F32EBF004DDF95 /* EasyBooksUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B64B2B525F32EBF004DDF95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B64B29325F32EBE004DDF95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B64B29A25F32EBE004DDF95;
+			remoteInfo = EasyBooks;
+		};
+		3B64B2C025F32EBF004DDF95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B64B29325F32EBE004DDF95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B64B29A25F32EBE004DDF95;
+			remoteInfo = EasyBooks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B64B29B25F32EBE004DDF95 /* EasyBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B64B29E25F32EBE004DDF95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B64B2A025F32EBE004DDF95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B64B2A225F32EBE004DDF95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B64B2A525F32EBE004DDF95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B64B2A825F32EBE004DDF95 /* EasyBooks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyBooks.xcdatamodel; sourceTree = "<group>"; };
+		3B64B2AA25F32EBF004DDF95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B64B2AD25F32EBF004DDF95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B64B2AF25F32EBF004DDF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B64B2B425F32EBF004DDF95 /* EasyBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B64B2B825F32EBF004DDF95 /* EasyBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBooksTests.swift; sourceTree = "<group>"; };
+		3B64B2BA25F32EBF004DDF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B64B2BF25F32EBF004DDF95 /* EasyBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B64B2C325F32EBF004DDF95 /* EasyBooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBooksUITests.swift; sourceTree = "<group>"; };
+		3B64B2C525F32EBF004DDF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B64B29825F32EBE004DDF95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B64B2B125F32EBF004DDF95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B64B2BC25F32EBF004DDF95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B64B29225F32EBE004DDF95 = {
+			isa = PBXGroup;
+			children = (
+				3B64B29D25F32EBE004DDF95 /* EasyBooks */,
+				3B64B2B725F32EBF004DDF95 /* EasyBooksTests */,
+				3B64B2C225F32EBF004DDF95 /* EasyBooksUITests */,
+				3B64B29C25F32EBE004DDF95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B64B29C25F32EBE004DDF95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B64B29B25F32EBE004DDF95 /* EasyBooks.app */,
+				3B64B2B425F32EBF004DDF95 /* EasyBooksTests.xctest */,
+				3B64B2BF25F32EBF004DDF95 /* EasyBooksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B64B29D25F32EBE004DDF95 /* EasyBooks */ = {
+			isa = PBXGroup;
+			children = (
+				3B64B29E25F32EBE004DDF95 /* AppDelegate.swift */,
+				3B64B2A025F32EBE004DDF95 /* SceneDelegate.swift */,
+				3B64B2A225F32EBE004DDF95 /* ViewController.swift */,
+				3B64B2A425F32EBE004DDF95 /* Main.storyboard */,
+				3B64B2AA25F32EBF004DDF95 /* Assets.xcassets */,
+				3B64B2AC25F32EBF004DDF95 /* LaunchScreen.storyboard */,
+				3B64B2AF25F32EBF004DDF95 /* Info.plist */,
+				3B64B2A725F32EBE004DDF95 /* EasyBooks.xcdatamodeld */,
+			);
+			path = EasyBooks;
+			sourceTree = "<group>";
+		};
+		3B64B2B725F32EBF004DDF95 /* EasyBooksTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B64B2B825F32EBF004DDF95 /* EasyBooksTests.swift */,
+				3B64B2BA25F32EBF004DDF95 /* Info.plist */,
+			);
+			path = EasyBooksTests;
+			sourceTree = "<group>";
+		};
+		3B64B2C225F32EBF004DDF95 /* EasyBooksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B64B2C325F32EBF004DDF95 /* EasyBooksUITests.swift */,
+				3B64B2C525F32EBF004DDF95 /* Info.plist */,
+			);
+			path = EasyBooksUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B64B29A25F32EBE004DDF95 /* EasyBooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B64B2C825F32EBF004DDF95 /* Build configuration list for PBXNativeTarget "EasyBooks" */;
+			buildPhases = (
+				3B64B29725F32EBE004DDF95 /* Sources */,
+				3B64B29825F32EBE004DDF95 /* Frameworks */,
+				3B64B29925F32EBE004DDF95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyBooks;
+			productName = EasyBooks;
+			productReference = 3B64B29B25F32EBE004DDF95 /* EasyBooks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B64B2B325F32EBF004DDF95 /* EasyBooksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B64B2CB25F32EBF004DDF95 /* Build configuration list for PBXNativeTarget "EasyBooksTests" */;
+			buildPhases = (
+				3B64B2B025F32EBF004DDF95 /* Sources */,
+				3B64B2B125F32EBF004DDF95 /* Frameworks */,
+				3B64B2B225F32EBF004DDF95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B64B2B625F32EBF004DDF95 /* PBXTargetDependency */,
+			);
+			name = EasyBooksTests;
+			productName = EasyBooksTests;
+			productReference = 3B64B2B425F32EBF004DDF95 /* EasyBooksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B64B2BE25F32EBF004DDF95 /* EasyBooksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B64B2CE25F32EBF004DDF95 /* Build configuration list for PBXNativeTarget "EasyBooksUITests" */;
+			buildPhases = (
+				3B64B2BB25F32EBF004DDF95 /* Sources */,
+				3B64B2BC25F32EBF004DDF95 /* Frameworks */,
+				3B64B2BD25F32EBF004DDF95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B64B2C125F32EBF004DDF95 /* PBXTargetDependency */,
+			);
+			name = EasyBooksUITests;
+			productName = EasyBooksUITests;
+			productReference = 3B64B2BF25F32EBF004DDF95 /* EasyBooksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B64B29325F32EBE004DDF95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3B64B29A25F32EBE004DDF95 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3B64B2B325F32EBF004DDF95 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3B64B29A25F32EBE004DDF95;
+					};
+					3B64B2BE25F32EBF004DDF95 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3B64B29A25F32EBE004DDF95;
+					};
+				};
+			};
+			buildConfigurationList = 3B64B29625F32EBE004DDF95 /* Build configuration list for PBXProject "EasyBooks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B64B29225F32EBE004DDF95;
+			productRefGroup = 3B64B29C25F32EBE004DDF95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B64B29A25F32EBE004DDF95 /* EasyBooks */,
+				3B64B2B325F32EBF004DDF95 /* EasyBooksTests */,
+				3B64B2BE25F32EBF004DDF95 /* EasyBooksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B64B29925F32EBE004DDF95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B64B2AE25F32EBF004DDF95 /* LaunchScreen.storyboard in Resources */,
+				3B64B2AB25F32EBF004DDF95 /* Assets.xcassets in Resources */,
+				3B64B2A625F32EBE004DDF95 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B64B2B225F32EBF004DDF95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B64B2BD25F32EBF004DDF95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B64B29725F32EBE004DDF95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B64B2A325F32EBE004DDF95 /* ViewController.swift in Sources */,
+				3B64B29F25F32EBE004DDF95 /* AppDelegate.swift in Sources */,
+				3B64B2A925F32EBE004DDF95 /* EasyBooks.xcdatamodeld in Sources */,
+				3B64B2A125F32EBE004DDF95 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B64B2B025F32EBF004DDF95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B64B2B925F32EBF004DDF95 /* EasyBooksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B64B2BB25F32EBF004DDF95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B64B2C425F32EBF004DDF95 /* EasyBooksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B64B2B625F32EBF004DDF95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B64B29A25F32EBE004DDF95 /* EasyBooks */;
+			targetProxy = 3B64B2B525F32EBF004DDF95 /* PBXContainerItemProxy */;
+		};
+		3B64B2C125F32EBF004DDF95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B64B29A25F32EBE004DDF95 /* EasyBooks */;
+			targetProxy = 3B64B2C025F32EBF004DDF95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B64B2A425F32EBE004DDF95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B64B2A525F32EBE004DDF95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B64B2AC25F32EBF004DDF95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B64B2AD25F32EBF004DDF95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B64B2C625F32EBF004DDF95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B64B2C725F32EBF004DDF95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B64B2C925F32EBF004DDF95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSCWTJD5B4;
+				INFOPLIST_FILE = EasyBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.zhanyiya.EasyBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B64B2CA25F32EBF004DDF95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSCWTJD5B4;
+				INFOPLIST_FILE = EasyBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.zhanyiya.EasyBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B64B2CC25F32EBF004DDF95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSCWTJD5B4;
+				INFOPLIST_FILE = EasyBooksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.zhanyiya.EasyBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyBooks.app/EasyBooks";
+			};
+			name = Debug;
+		};
+		3B64B2CD25F32EBF004DDF95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSCWTJD5B4;
+				INFOPLIST_FILE = EasyBooksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.zhanyiya.EasyBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyBooks.app/EasyBooks";
+			};
+			name = Release;
+		};
+		3B64B2CF25F32EBF004DDF95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSCWTJD5B4;
+				INFOPLIST_FILE = EasyBooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.zhanyiya.EasyBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyBooks;
+			};
+			name = Debug;
+		};
+		3B64B2D025F32EBF004DDF95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSCWTJD5B4;
+				INFOPLIST_FILE = EasyBooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.zhanyiya.EasyBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyBooks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B64B29625F32EBE004DDF95 /* Build configuration list for PBXProject "EasyBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B64B2C625F32EBF004DDF95 /* Debug */,
+				3B64B2C725F32EBF004DDF95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B64B2C825F32EBF004DDF95 /* Build configuration list for PBXNativeTarget "EasyBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B64B2C925F32EBF004DDF95 /* Debug */,
+				3B64B2CA25F32EBF004DDF95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B64B2CB25F32EBF004DDF95 /* Build configuration list for PBXNativeTarget "EasyBooksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B64B2CC25F32EBF004DDF95 /* Debug */,
+				3B64B2CD25F32EBF004DDF95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B64B2CE25F32EBF004DDF95 /* Build configuration list for PBXNativeTarget "EasyBooksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B64B2CF25F32EBF004DDF95 /* Debug */,
+				3B64B2D025F32EBF004DDF95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B64B2A725F32EBE004DDF95 /* EasyBooks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B64B2A825F32EBE004DDF95 /* EasyBooks.xcdatamodel */,
+			);
+			currentVersion = 3B64B2A825F32EBE004DDF95 /* EasyBooks.xcdatamodel */;
+			path = EasyBooks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3B64B29325F32EBE004DDF95 /* Project object */;
+}
