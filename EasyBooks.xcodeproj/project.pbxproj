@@ -16,6 +16,7 @@
 		3B64B2AE25F32EBF004DDF95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B64B2AC25F32EBF004DDF95 /* LaunchScreen.storyboard */; };
 		3B64B2B925F32EBF004DDF95 /* EasyBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2B825F32EBF004DDF95 /* EasyBooksTests.swift */; };
 		3B64B2C425F32EBF004DDF95 /* EasyBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2C325F32EBF004DDF95 /* EasyBooksUITests.swift */; };
+		3B64B2D725F33113004DDF95 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B64B2D625F33113004DDF95 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		3B64B2BF25F32EBF004DDF95 /* EasyBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B64B2C325F32EBF004DDF95 /* EasyBooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBooksUITests.swift; sourceTree = "<group>"; };
 		3B64B2C525F32EBF004DDF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B64B2D425F33105004DDF95 /* EasyBooks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyBooks.entitlements; sourceTree = "<group>"; };
+		3B64B2D625F33113004DDF95 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B64B2D725F33113004DDF95 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				3B64B2B725F32EBF004DDF95 /* EasyBooksTests */,
 				3B64B2C225F32EBF004DDF95 /* EasyBooksUITests */,
 				3B64B29C25F32EBE004DDF95 /* Products */,
+				3B64B2D525F33113004DDF95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +106,7 @@
 		3B64B29D25F32EBE004DDF95 /* EasyBooks */ = {
 			isa = PBXGroup;
 			children = (
+				3B64B2D425F33105004DDF95 /* EasyBooks.entitlements */,
 				3B64B29E25F32EBE004DDF95 /* AppDelegate.swift */,
 				3B64B2A025F32EBE004DDF95 /* SceneDelegate.swift */,
 				3B64B2A225F32EBE004DDF95 /* ViewController.swift */,
@@ -129,6 +135,14 @@
 				3B64B2C525F32EBF004DDF95 /* Info.plist */,
 			);
 			path = EasyBooksUITests;
+			sourceTree = "<group>";
+		};
+		3B64B2D525F33113004DDF95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B64B2D625F33113004DDF95 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,14 +454,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EasyBooks/EasyBooks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TSCWTJD5B4;
+				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = EasyBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.zhanyiya.EasyBooks;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridancollege.zhanyiya.easybooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,14 +474,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EasyBooks/EasyBooks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TSCWTJD5B4;
+				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = EasyBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.zhanyiya.EasyBooks;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridancollege.zhanyiya.easybooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
