@@ -9,13 +9,29 @@ import UIKit
 
 class HTMainViewController: UIViewController {
 
-    @IBOutlet weak var topLeftLabel: UILabel!
+    lazy var eventReportView: EventReportView = {
+        let eventReportView = EventReportView()
+       eventReportView.translatesAutoresizingMaskIntoConstraints = false
+        return eventReportView
+    }()
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        view.addSubview(eventReportView)
+        view.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: eventReportView.leadingAnchor).isActive = true
+        view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: eventReportView.trailingAnchor).isActive = true
+        view.safeAreaLayoutGuide.topAnchor.constraint(equalTo: eventReportView.topAnchor).isActive = true
+        eventReportView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
+    }
 
     /*
     // MARK: - Navigation

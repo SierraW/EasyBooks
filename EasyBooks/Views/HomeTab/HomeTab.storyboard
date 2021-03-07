@@ -22,30 +22,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMK-Yz-Dme">
-                                <rect key="frame" x="20" y="44" width="88" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YUn-fN-FBy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YUn-fN-FBy" firstAttribute="bottom" secondItem="WpB-3N-IvC" secondAttribute="bottom" id="0J8-7A-5cU"/>
                             <constraint firstItem="YUn-fN-FBy" firstAttribute="trailing" secondItem="WpB-3N-IvC" secondAttribute="trailing" constant="20" id="DOc-J5-GLG"/>
-                            <constraint firstItem="eMK-Yz-Dme" firstAttribute="top" secondItem="YUn-fN-FBy" secondAttribute="top" id="FYy-Cd-cY2"/>
-                            <constraint firstItem="eMK-Yz-Dme" firstAttribute="leading" secondItem="YUn-fN-FBy" secondAttribute="leading" constant="20" id="dSQ-j0-Kh0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="Jey-ST-F7h"/>
-                    <connections>
-                        <outlet property="topLeftLabel" destination="eMK-Yz-Dme" id="sH3-kw-X7U"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xr7-5g-Jac" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2894" y="-605"/>
+            <point key="canvasLocation" x="2786" y="-649"/>
         </scene>
     </scenes>
     <resources>

@@ -18,6 +18,8 @@
 		3B64B2C425F32EBF004DDF95 /* EasyBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2C325F32EBF004DDF95 /* EasyBooksUITests.swift */; };
 		3B64B2D725F33113004DDF95 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B64B2D625F33113004DDF95 /* CloudKit.framework */; };
 		3B7DEA3125F354CB00AC5BD1 /* HTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DEA3025F354CB00AC5BD1 /* HTMainViewController.swift */; };
+		3B7DEA5C25F4655400AC5BD1 /* EventReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DEA5B25F4655400AC5BD1 /* EventReportView.swift */; };
+		3B7DEA6E25F48BDD00AC5BD1 /* EventReportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DEA5625F4644200AC5BD1 /* EventReportView.xib */; };
 		3BBA121925F34D4400A4ACE8 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBA121825F34D4400A4ACE8 /* HomeTab.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		3B64B2D425F33105004DDF95 /* EasyBooks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyBooks.entitlements; sourceTree = "<group>"; };
 		3B64B2D625F33113004DDF95 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		3B7DEA3025F354CB00AC5BD1 /* HTMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMainViewController.swift; sourceTree = "<group>"; };
+		3B7DEA5625F4644200AC5BD1 /* EventReportView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventReportView.xib; sourceTree = "<group>"; };
+		3B7DEA5B25F4655400AC5BD1 /* EventReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventReportView.swift; sourceTree = "<group>"; };
 		3BBA121825F34D4400A4ACE8 /* HomeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +167,8 @@
 			children = (
 				3BBA121825F34D4400A4ACE8 /* HomeTab.storyboard */,
 				3B7DEA3025F354CB00AC5BD1 /* HTMainViewController.swift */,
+				3B7DEA5625F4644200AC5BD1 /* EventReportView.xib */,
+				3B7DEA5B25F4655400AC5BD1 /* EventReportView.swift */,
 			);
 			path = HomeTab;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B64B2AE25F32EBF004DDF95 /* LaunchScreen.storyboard in Resources */,
+				3B7DEA6E25F48BDD00AC5BD1 /* EventReportView.xib in Resources */,
 				3BBA121925F34D4400A4ACE8 /* HomeTab.storyboard in Resources */,
 				3B64B2AB25F32EBF004DDF95 /* Assets.xcassets in Resources */,
 				3B64B2A625F32EBE004DDF95 /* Main.storyboard in Resources */,
@@ -303,6 +310,7 @@
 				3B64B29F25F32EBE004DDF95 /* AppDelegate.swift in Sources */,
 				3B64B2A925F32EBE004DDF95 /* EasyBooks.xcdatamodeld in Sources */,
 				3B64B2A125F32EBE004DDF95 /* SceneDelegate.swift in Sources */,
+				3B7DEA5C25F4655400AC5BD1 /* EventReportView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
