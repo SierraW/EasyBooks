@@ -22,6 +22,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6P-SY-Pex">
+                                <rect key="frame" x="151" y="433" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Transaction"/>
+                                <connections>
+                                    <segue destination="otK-6O-c4A" kind="show" id="TmQ-Mm-QXb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YUn-fN-FBy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -35,6 +43,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xr7-5g-Jac" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2786" y="-649"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tan-vf-juT">
+            <objects>
+                <viewController id="otK-6O-c4A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qCY-RF-dOs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="s2c-n6-nrg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JAl-pu-hWg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jC-Kn-8vb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3617" y="-650"/>
         </scene>
     </scenes>
     <resources>

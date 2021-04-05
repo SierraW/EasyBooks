@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="EBBunny" representedClassName="EBBunny" syncable="YES" codeGenerationType="class">
         <attribute name="des" attributeType="String" defaultValueString=""/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
         <relationship name="bunnyBill" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBBunnyBill" inverseName="bunny" inverseEntity="EBBunnyBill"/>
+        <relationship name="transaction" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBTransaction" inverseName="bunny" inverseEntity="EBTransaction"/>
     </entity>
     <entity name="EBBunnyBill" representedClassName="EBBunnyBill" syncable="YES" codeGenerationType="class">
         <attribute name="amount" attributeType="Decimal" defaultValueString="0"/>
@@ -27,7 +28,7 @@
     </entity>
     <entity name="EBTag" representedClassName="EBTag" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBTag" inverseName="parent" inverseEntity="EBTag"/>
+        <attribute name="parent" optional="YES" attributeType="String"/>
         <relationship name="transaction" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBTransaction" inverseName="tag" inverseEntity="EBTransaction"/>
     </entity>
     <entity name="EBTransaction" representedClassName="EBTransaction" syncable="YES" codeGenerationType="class">
@@ -36,16 +37,17 @@
         <attribute name="dateCreated" attributeType="Date" defaultDateTimeInterval="636697500" usesScalarValueType="NO"/>
         <attribute name="des" attributeType="String" defaultValueString=""/>
         <attribute name="expectedPaymentDate" attributeType="Date" defaultDateTimeInterval="636697440" usesScalarValueType="NO"/>
+        <relationship name="bunny" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBBunny" inverseName="transaction" inverseEntity="EBBunny"/>
         <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBEvent" inverseName="transactions" inverseEntity="EBEvent"/>
         <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBTag" inverseName="transaction" inverseEntity="EBTag"/>
         <relationship name="unit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBCurrencyUnit" inverseName="transaction" inverseEntity="EBCurrencyUnit"/>
     </entity>
     <elements>
-        <element name="EBTag" positionX="-63" positionY="-18" width="128" height="74"/>
-        <element name="EBCurrencyUnit" positionX="-54" positionY="9" width="128" height="104"/>
-        <element name="EBTransaction" positionX="-36" positionY="36" width="128" height="149"/>
-        <element name="EBBunny" positionX="-18" positionY="90" width="128" height="74"/>
+        <element name="EBBunny" positionX="-18" positionY="90" width="128" height="89"/>
         <element name="EBBunnyBill" positionX="0" positionY="99" width="128" height="89"/>
+        <element name="EBCurrencyUnit" positionX="-54" positionY="9" width="128" height="104"/>
         <element name="EBEvent" positionX="18" positionY="108" width="128" height="104"/>
+        <element name="EBTag" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="EBTransaction" positionX="-36" positionY="36" width="128" height="164"/>
     </elements>
 </model>

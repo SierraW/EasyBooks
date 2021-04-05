@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyUnitAdditionViewController" customModule="EasyBooks" customModuleProvider="target">
+            <connections>
+                <outlet property="nameTextField" destination="0yu-uy-usJ" id="9bM-CL-6fs"/>
+                <outlet property="prefixTextField" destination="lXU-mv-l5Y" id="V0o-X2-Z4e"/>
+                <outlet property="submitButton" destination="tIV-DM-xHW" id="umk-2s-1v6"/>
+                <outlet property="symbolTextField" destination="xnP-6J-ufl" id="auM-kr-sGA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Ah-Qo-aZ6">
+                    <rect key="frame" x="30" y="349.5" width="354" height="62.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Single Letter Symbol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eft-dn-kq6">
+                            <rect key="frame" x="98.5" y="0.0" width="157.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnP-6J-ufl">
+                            <rect key="frame" x="30" y="28.5" width="294" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xnP-6J-ufl" firstAttribute="leading" secondItem="2Ah-Qo-aZ6" secondAttribute="leading" constant="30" id="ZZX-ab-y2i"/>
+                        <constraint firstAttribute="trailing" secondItem="xnP-6J-ufl" secondAttribute="trailing" constant="30" id="dPA-Wj-z1J"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fWI-Lv-eDc">
+                    <rect key="frame" x="30" y="422" width="354" height="62.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of the Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNk-6y-aON">
+                            <rect key="frame" x="93" y="0.0" width="168" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0yu-uy-usJ">
+                            <rect key="frame" x="30" y="28.5" width="294" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0yu-uy-usJ" firstAttribute="leading" secondItem="fWI-Lv-eDc" secondAttribute="leading" constant="30" id="ItH-Tm-OjO"/>
+                        <constraint firstAttribute="trailing" secondItem="0yu-uy-usJ" secondAttribute="trailing" constant="30" id="TTi-9L-S9t"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Currency Unit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9h-jb-nj3">
+                    <rect key="frame" x="119.5" y="74" width="175.5" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J4H-dP-icw">
+                    <rect key="frame" x="30" y="494.5" width="354" height="62.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prefix of the Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Uu-bh-AZr">
+                            <rect key="frame" x="94" y="0.0" width="166.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lXU-mv-l5Y">
+                            <rect key="frame" x="30" y="28.5" width="294" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lXU-mv-l5Y" firstAttribute="leading" secondItem="J4H-dP-icw" secondAttribute="leading" constant="30" id="LYE-L7-0wT"/>
+                        <constraint firstAttribute="trailing" secondItem="lXU-mv-l5Y" secondAttribute="trailing" constant="30" id="R03-AO-nFf"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIV-DM-xHW">
+                    <rect key="frame" x="60" y="607" width="294" height="30"/>
+                    <state key="normal" title="Submit"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="J4H-dP-icw" firstAttribute="top" secondItem="fWI-Lv-eDc" secondAttribute="bottom" constant="10" id="43i-pA-x8j"/>
+                <constraint firstItem="J4H-dP-icw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="CDc-A1-IYu"/>
+                <constraint firstItem="tIV-DM-xHW" firstAttribute="top" secondItem="J4H-dP-icw" secondAttribute="bottom" constant="50" id="EHB-qz-X0s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Ah-Qo-aZ6" secondAttribute="trailing" constant="30" id="H98-r4-Apa"/>
+                <constraint firstItem="fWI-Lv-eDc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Hal-3l-Ijb"/>
+                <constraint firstItem="fWI-Lv-eDc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Joe-5g-4z8"/>
+                <constraint firstItem="2Ah-Qo-aZ6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="R5f-8l-hAT"/>
+                <constraint firstItem="fWI-Lv-eDc" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="XUe-jq-1LA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J4H-dP-icw" secondAttribute="trailing" constant="30" id="Z78-zs-juJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fWI-Lv-eDc" secondAttribute="trailing" constant="30" id="aFk-fn-Stc"/>
+                <constraint firstItem="tIV-DM-xHW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bMS-7X-Mx4"/>
+                <constraint firstItem="2Ah-Qo-aZ6" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bhY-YJ-jJo"/>
+                <constraint firstItem="tIV-DM-xHW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="eWS-0c-hec"/>
+                <constraint firstItem="o9h-jb-nj3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="ebr-60-l0u"/>
+                <constraint firstItem="J4H-dP-icw" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gC9-dl-Ur4"/>
+                <constraint firstItem="o9h-jb-nj3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="m6R-n7-Ben"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tIV-DM-xHW" secondAttribute="trailing" constant="60" id="oiU-SB-g28"/>
+                <constraint firstItem="fWI-Lv-eDc" firstAttribute="top" secondItem="2Ah-Qo-aZ6" secondAttribute="bottom" constant="10" id="tJy-HG-rK9"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

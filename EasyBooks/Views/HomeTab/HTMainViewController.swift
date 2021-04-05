@@ -21,6 +21,8 @@ class HTMainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //do somthing
     }
     
     override func viewWillAppear(_ animated: Bool) {

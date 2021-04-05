@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B015B9F2612B4B100AAB9B1 /* TransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B015B9E2612B4B100AAB9B1 /* TransactionListViewController.swift */; };
+		3B015BA42612C20600AAB9B1 /* TransactionAdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B015BA32612C20600AAB9B1 /* TransactionAdditionViewController.swift */; };
+		3B015BA92612C64000AAB9B1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B015BA82612C64000AAB9B1 /* ViewController.xib */; };
+		3B015BAF2613C33E00AAB9B1 /* BunnyAdditonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B015BAD2613C33D00AAB9B1 /* BunnyAdditonViewController.swift */; };
+		3B015BB02613C33E00AAB9B1 /* BunnyAdditonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B015BAE2613C33D00AAB9B1 /* BunnyAdditonViewController.xib */; };
+		3B015BB62613C44A00AAB9B1 /* DataTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B015BB52613C44A00AAB9B1 /* DataTabViewController.swift */; };
+		3B015BBF2613C4F900AAB9B1 /* BunnyManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B015BBD2613C4F900AAB9B1 /* BunnyManageViewController.swift */; };
+		3B015BC02613C4F900AAB9B1 /* BunnyManageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B015BBE2613C4F900AAB9B1 /* BunnyManageViewController.xib */; };
+		3B349E96261A4DEE00A22B31 /* CompleteAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349E95261A4DEE00A22B31 /* CompleteAlertController.swift */; };
+		3B349E9B261A4E9900A22B31 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349E9A261A4E9900A22B31 /* AlertController.swift */; };
+		3B349EA8261A6D0C00A22B31 /* CurrencyUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349EA6261A6D0C00A22B31 /* CurrencyUnitViewController.swift */; };
+		3B349EA9261A6D0C00A22B31 /* CurrencyUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349EA7261A6D0C00A22B31 /* CurrencyUnitViewController.xib */; };
+		3B349EAF261A71BC00A22B31 /* CurrencyUnitAdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349EAD261A71BC00A22B31 /* CurrencyUnitAdditionViewController.swift */; };
+		3B349EB0261A71BC00A22B31 /* CurrencyUnitAdditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349EAE261A71BC00A22B31 /* CurrencyUnitAdditionViewController.xib */; };
+		3B349EB6261A771C00A22B31 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349EB5261A771C00A22B31 /* StringExtension.swift */; };
+		3B349EC0261A83AB00A22B31 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349EBE261A83AB00A22B31 /* TagViewController.swift */; };
+		3B349EC1261A83AB00A22B31 /* TagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349EBF261A83AB00A22B31 /* TagViewController.xib */; };
+		3B349ECA261A83BE00A22B31 /* TagAdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349EC8261A83BE00A22B31 /* TagAdditionViewController.swift */; };
+		3B349ECB261A83BE00A22B31 /* TagAdditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349EC9261A83BE00A22B31 /* TagAdditionViewController.xib */; };
+		3B349ED1261A8E4A00A22B31 /* ButtonStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349ED0261A8E4A00A22B31 /* ButtonStyler.swift */; };
+		3B349EEB261AA84300A22B31 /* TagTreeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349EEA261AA84300A22B31 /* TagTreeGenerator.swift */; };
 		3B64B29F25F32EBE004DDF95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B29E25F32EBE004DDF95 /* AppDelegate.swift */; };
 		3B64B2A125F32EBE004DDF95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2A025F32EBE004DDF95 /* SceneDelegate.swift */; };
 		3B64B2A325F32EBE004DDF95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2A225F32EBE004DDF95 /* ViewController.swift */; };
@@ -41,6 +62,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B015B9E2612B4B100AAB9B1 /* TransactionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewController.swift; sourceTree = "<group>"; };
+		3B015BA32612C20600AAB9B1 /* TransactionAdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAdditionViewController.swift; sourceTree = "<group>"; };
+		3B015BA82612C64000AAB9B1 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		3B015BAD2613C33D00AAB9B1 /* BunnyAdditonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyAdditonViewController.swift; sourceTree = "<group>"; };
+		3B015BAE2613C33D00AAB9B1 /* BunnyAdditonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BunnyAdditonViewController.xib; sourceTree = "<group>"; };
+		3B015BB52613C44A00AAB9B1 /* DataTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTabViewController.swift; sourceTree = "<group>"; };
+		3B015BBD2613C4F900AAB9B1 /* BunnyManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyManageViewController.swift; sourceTree = "<group>"; };
+		3B015BBE2613C4F900AAB9B1 /* BunnyManageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BunnyManageViewController.xib; sourceTree = "<group>"; };
+		3B349E95261A4DEE00A22B31 /* CompleteAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteAlertController.swift; sourceTree = "<group>"; };
+		3B349E9A261A4E9900A22B31 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		3B349EA6261A6D0C00A22B31 /* CurrencyUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUnitViewController.swift; sourceTree = "<group>"; };
+		3B349EA7261A6D0C00A22B31 /* CurrencyUnitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyUnitViewController.xib; sourceTree = "<group>"; };
+		3B349EAD261A71BC00A22B31 /* CurrencyUnitAdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUnitAdditionViewController.swift; sourceTree = "<group>"; };
+		3B349EAE261A71BC00A22B31 /* CurrencyUnitAdditionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyUnitAdditionViewController.xib; sourceTree = "<group>"; };
+		3B349EB5261A771C00A22B31 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3B349EBE261A83AB00A22B31 /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		3B349EBF261A83AB00A22B31 /* TagViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagViewController.xib; sourceTree = "<group>"; };
+		3B349EC8261A83BE00A22B31 /* TagAdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAdditionViewController.swift; sourceTree = "<group>"; };
+		3B349EC9261A83BE00A22B31 /* TagAdditionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagAdditionViewController.xib; sourceTree = "<group>"; };
+		3B349ED0261A8E4A00A22B31 /* ButtonStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyler.swift; sourceTree = "<group>"; };
+		3B349EEA261AA84300A22B31 /* TagTreeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTreeGenerator.swift; sourceTree = "<group>"; };
 		3B64B29B25F32EBE004DDF95 /* EasyBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B64B29E25F32EBE004DDF95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B64B2A025F32EBE004DDF95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +132,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B015B762612812C00AAB9B1 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				3B015B9E2612B4B100AAB9B1 /* TransactionListViewController.swift */,
+				3B015BA32612C20600AAB9B1 /* TransactionAdditionViewController.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		3B015B8B2612833E00AAB9B1 /* Bunny */ = {
+			isa = PBXGroup;
+			children = (
+				3B015BAD2613C33D00AAB9B1 /* BunnyAdditonViewController.swift */,
+				3B015BAE2613C33D00AAB9B1 /* BunnyAdditonViewController.xib */,
+				3B015BBD2613C4F900AAB9B1 /* BunnyManageViewController.swift */,
+				3B015BBE2613C4F900AAB9B1 /* BunnyManageViewController.xib */,
+			);
+			path = Bunny;
+			sourceTree = "<group>";
+		};
+		3B015B8C2612834600AAB9B1 /* CurrencyUnit */ = {
+			isa = PBXGroup;
+			children = (
+				3B349EA6261A6D0C00A22B31 /* CurrencyUnitViewController.swift */,
+				3B349EA7261A6D0C00A22B31 /* CurrencyUnitViewController.xib */,
+				3B349EAD261A71BC00A22B31 /* CurrencyUnitAdditionViewController.swift */,
+				3B349EAE261A71BC00A22B31 /* CurrencyUnitAdditionViewController.xib */,
+			);
+			path = CurrencyUnit;
+			sourceTree = "<group>";
+		};
+		3B015B8D2612834E00AAB9B1 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		3B015B8E2612835E00AAB9B1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3B349ECF261A8E1800A22B31 /* Button */,
+				3B349EBD261A834B00A22B31 /* Tag */,
+				3B349EB4261A770200A22B31 /* extension */,
+				3B349E94261A4DC700A22B31 /* AlertControl */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3B015B8F2612836400AAB9B1 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				3B349EBE261A83AB00A22B31 /* TagViewController.swift */,
+				3B349EBF261A83AB00A22B31 /* TagViewController.xib */,
+				3B349EC8261A83BE00A22B31 /* TagAdditionViewController.swift */,
+				3B349EC9261A83BE00A22B31 /* TagAdditionViewController.xib */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		3B015B902612837200AAB9B1 /* BunnyBill */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BunnyBill;
+			sourceTree = "<group>";
+		};
+		3B015BB42613C43600AAB9B1 /* DataTab */ = {
+			isa = PBXGroup;
+			children = (
+				3B015BB52613C44A00AAB9B1 /* DataTabViewController.swift */,
+			);
+			path = DataTab;
+			sourceTree = "<group>";
+		};
+		3B349E94261A4DC700A22B31 /* AlertControl */ = {
+			isa = PBXGroup;
+			children = (
+				3B349E95261A4DEE00A22B31 /* CompleteAlertController.swift */,
+				3B349E9A261A4E9900A22B31 /* AlertController.swift */,
+			);
+			path = AlertControl;
+			sourceTree = "<group>";
+		};
+		3B349EB4261A770200A22B31 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				3B349EB5261A771C00A22B31 /* StringExtension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		3B349EBD261A834B00A22B31 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				3B349EEA261AA84300A22B31 /* TagTreeGenerator.swift */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		3B349ECF261A8E1800A22B31 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				3B349ED0261A8E4A00A22B31 /* ButtonStyler.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		3B64B29225F32EBE004DDF95 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +264,7 @@
 		3B64B29D25F32EBE004DDF95 /* EasyBooks */ = {
 			isa = PBXGroup;
 			children = (
+				3B015B8E2612835E00AAB9B1 /* Core */,
 				3B7DEA2E25F3549D00AC5BD1 /* Views */,
 				3B64B2D425F33105004DDF95 /* EasyBooks.entitlements */,
 				3B64B29E25F32EBE004DDF95 /* AppDelegate.swift */,
@@ -157,7 +308,15 @@
 		3B7DEA2E25F3549D00AC5BD1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3B015BB42613C43600AAB9B1 /* DataTab */,
+				3B015B902612837200AAB9B1 /* BunnyBill */,
+				3B015B8F2612836400AAB9B1 /* Tag */,
+				3B015B8D2612834E00AAB9B1 /* Event */,
+				3B015B8C2612834600AAB9B1 /* CurrencyUnit */,
+				3B015B8B2612833E00AAB9B1 /* Bunny */,
+				3B015B762612812C00AAB9B1 /* Transaction */,
 				3B7DEA2F25F354A600AC5BD1 /* HomeTab */,
+				3B015BA82612C64000AAB9B1 /* ViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -276,10 +435,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B349EA9261A6D0C00A22B31 /* CurrencyUnitViewController.xib in Resources */,
+				3B349ECB261A83BE00A22B31 /* TagAdditionViewController.xib in Resources */,
+				3B349EB0261A71BC00A22B31 /* CurrencyUnitAdditionViewController.xib in Resources */,
 				3B64B2AE25F32EBF004DDF95 /* LaunchScreen.storyboard in Resources */,
+				3B349EC1261A83AB00A22B31 /* TagViewController.xib in Resources */,
 				3B7DEA6E25F48BDD00AC5BD1 /* EventReportView.xib in Resources */,
+				3B015BC02613C4F900AAB9B1 /* BunnyManageViewController.xib in Resources */,
+				3B015BB02613C33E00AAB9B1 /* BunnyAdditonViewController.xib in Resources */,
 				3BBA121925F34D4400A4ACE8 /* HomeTab.storyboard in Resources */,
 				3B64B2AB25F32EBF004DDF95 /* Assets.xcassets in Resources */,
+				3B015BA92612C64000AAB9B1 /* ViewController.xib in Resources */,
 				3B64B2A625F32EBE004DDF95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,11 +471,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B349E9B261A4E9900A22B31 /* AlertController.swift in Sources */,
+				3B015B9F2612B4B100AAB9B1 /* TransactionListViewController.swift in Sources */,
+				3B349EA8261A6D0C00A22B31 /* CurrencyUnitViewController.swift in Sources */,
+				3B349ECA261A83BE00A22B31 /* TagAdditionViewController.swift in Sources */,
+				3B349EC0261A83AB00A22B31 /* TagViewController.swift in Sources */,
 				3B64B2A325F32EBE004DDF95 /* ViewController.swift in Sources */,
+				3B349EB6261A771C00A22B31 /* StringExtension.swift in Sources */,
+				3B015BB62613C44A00AAB9B1 /* DataTabViewController.swift in Sources */,
+				3B349EAF261A71BC00A22B31 /* CurrencyUnitAdditionViewController.swift in Sources */,
+				3B349E96261A4DEE00A22B31 /* CompleteAlertController.swift in Sources */,
 				3B7DEA3125F354CB00AC5BD1 /* HTMainViewController.swift in Sources */,
+				3B349ED1261A8E4A00A22B31 /* ButtonStyler.swift in Sources */,
+				3B015BBF2613C4F900AAB9B1 /* BunnyManageViewController.swift in Sources */,
+				3B015BA42612C20600AAB9B1 /* TransactionAdditionViewController.swift in Sources */,
 				3B64B29F25F32EBE004DDF95 /* AppDelegate.swift in Sources */,
+				3B015BAF2613C33E00AAB9B1 /* BunnyAdditonViewController.swift in Sources */,
 				3B64B2A925F32EBE004DDF95 /* EasyBooks.xcdatamodeld in Sources */,
 				3B64B2A125F32EBE004DDF95 /* SceneDelegate.swift in Sources */,
+				3B349EEB261AA84300A22B31 /* TagTreeGenerator.swift in Sources */,
 				3B7DEA5C25F4655400AC5BD1 /* EventReportView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
