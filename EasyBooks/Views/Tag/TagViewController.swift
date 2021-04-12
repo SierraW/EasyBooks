@@ -10,15 +10,25 @@ import CoreData
 
 protocol TagViewControllerDelegate {
     var context: NSManagedObjectContext { get }
-    func fetchTags()
     var mode: TagViewController.Mode { get set }
+    func fetchTags()
+    func contains(tagName: String) -> Bool
 }
 
 protocol TagViewControllerDataSource {
-    var tags: [EBTag]? { get }
+    var tag: EBTag? { get set }
 }
 
-class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, TagViewControllerDelegate, TagViewControllerDataSource {
+class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, TagViewControllerDelegate {
+    func contains(tagName: String) -> Bool {
+        if let tags = tags, let _ = tags.firstIndex(where: { tag -> Bool in
+            tag.name == tagName
+        }) {
+            return true
+        }
+        return false
+    }
+    
         
     func numberOfSections(in tableView: UITableView) -> Int {
         return mode == .normal ? 2 : 1
@@ -55,9 +65,9 @@ class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier")
+        var cell = tableView.dequeueReusableCell(withIdentifier: "TCell")
         if cell == nil {
-            cell = UITableViewCell(style: .value1, reuseIdentifier: "reuseIdentifier")
+            cell = UITableViewCell(style: .value1, reuseIdentifier: "TCell")
         }
         if indexPath.section == 0 && mode == .normal{
             cell!.textLabel?.text = "Add a New Tag..."
@@ -79,9 +89,9 @@ class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                 let tag = tags[indexPath.row]
                 parentTagDataSource!.parentTag = tag.name
                 dismiss(animated: true, completion: nil)
-            } else if transactionAdditionViewControllerDataSource != nil, let tags = tags {
+            } else if dataSource != nil, let tags = tags {
                 let tag = tags[indexPath.row]
-                transactionAdditionViewControllerDataSource?.tag = tag
+                dataSource?.tag = tag
                 dismiss(animated: true, completion: nil)
             }
         }
@@ -103,7 +113,7 @@ class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     var parentTagDataSource: TagAdditionViewControllerDataSource?
     
-    var transactionAdditionViewControllerDataSource: TransactionAdditionViewControllerDataSource?
+    var dataSource: TagViewControllerDataSource?
     
     let tagTreeGenerator = TagTreeGenerator()
     
@@ -146,7 +156,6 @@ class TagViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         let vc = TagAdditionViewController()
         vc.tagViewControllerDelegate = self
         vc.alertController = CompleteAlertController()
-        vc.tagViewControllerDataSource = self
         self.present(vc, animated: true, completion: nil)
     }
 

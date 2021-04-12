@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventAmountSplitterViewController" customModule="EasyBooks" customModuleProvider="target">
+            <connections>
+                <outlet property="submitButton" destination="O6o-rH-7Si" id="gBi-lg-zcJ"/>
+                <outlet property="tableView" destination="Ofn-dI-TGb" id="8Kt-Mu-eQ1"/>
+                <outlet property="textField" destination="ueR-Ct-Btd" id="D8N-vf-bAQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ofn-dI-TGb">
+                    <rect key="frame" x="20" y="308" width="374" height="504"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="FSs-ja-zsS"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6o-rH-7Si">
+                    <rect key="frame" x="20" y="832" width="374" height="30"/>
+                    <state key="normal" title="Submit"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount Splitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaI-Nc-v0w">
+                    <rect key="frame" x="147.5" y="74" width="119" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9rp-C1-BK3">
+                    <rect key="frame" x="20" y="225.5" width="374" height="62.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7r-d3-bd3">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ueR-Ct-Btd">
+                            <rect key="frame" x="0.0" y="28.5" width="374" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rcr-Ub-LVp">
+                    <rect key="frame" x="20" y="124.5" width="374" height="81"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="81" id="ofq-Rn-ry5"/>
+                    </constraints>
+                    <string key="text">Amount should be consistant. Having the same currency and same condition (like before tax or after tax) are the essential part of this splitter. Splitter only calculate and return percentages of each payor.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ofn-dI-TGb" secondAttribute="trailing" constant="20" id="5ac-3T-kUj"/>
+                <constraint firstItem="O6o-rH-7Si" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AyE-FV-sPV"/>
+                <constraint firstItem="rcr-Ub-LVp" firstAttribute="top" secondItem="aaI-Nc-v0w" secondAttribute="bottom" constant="30" id="BTa-Lu-gUz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O6o-rH-7Si" secondAttribute="trailing" constant="20" id="EUB-Ky-DaA"/>
+                <constraint firstItem="O6o-rH-7Si" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="JOX-cI-cSd"/>
+                <constraint firstItem="9rp-C1-BK3" firstAttribute="top" secondItem="rcr-Ub-LVp" secondAttribute="bottom" constant="20" id="LiJ-ud-v5S"/>
+                <constraint firstItem="rcr-Ub-LVp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="SHQ-eE-Ogf"/>
+                <constraint firstItem="9rp-C1-BK3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Tc1-CE-XNa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rcr-Ub-LVp" secondAttribute="trailing" constant="20" id="VsF-nW-dLy"/>
+                <constraint firstItem="Ofn-dI-TGb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Y2S-WB-ydT"/>
+                <constraint firstItem="9rp-C1-BK3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aDK-Ng-Sub"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9rp-C1-BK3" secondAttribute="trailing" constant="20" id="aWJ-m0-pxB"/>
+                <constraint firstItem="Ofn-dI-TGb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hkZ-B4-OLE"/>
+                <constraint firstItem="O6o-rH-7Si" firstAttribute="top" secondItem="Ofn-dI-TGb" secondAttribute="bottom" constant="20" id="hxx-YB-QCb"/>
+                <constraint firstItem="Ofn-dI-TGb" firstAttribute="top" secondItem="9rp-C1-BK3" secondAttribute="bottom" constant="20" id="n1h-5k-vge"/>
+                <constraint firstItem="aaI-Nc-v0w" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="vm8-PK-ewU"/>
+                <constraint firstItem="aaI-Nc-v0w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="wYG-2M-PiZ"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="65.625"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

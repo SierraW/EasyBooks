@@ -11,6 +11,12 @@ protocol BunnyManageViewControllerDelegate {
     func fetchBunnys()
 }
 
+protocol BunnyManageViewControllerDataSource {
+    var bunny: EBBunny? { get set }
+    
+    func checkExist(with name: String) -> Bool
+}
+
 class BunnyManageViewController: UIViewController, BunnyManageViewControllerDelegate, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -18,21 +24,32 @@ class BunnyManageViewController: UIViewController, BunnyManageViewControllerDele
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BunnyCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BunnyCell") ?? UITableViewCell(style: .value1, reuseIdentifier: "BunnyCell")
         if let bunnys = bunnys {
             let bunny = bunnys[indexPath.row]
             cell.textLabel?.text = bunny.name
+            
+            if mode == .Event {
+                if let dataSource = dataSource, let name = bunny.name, dataSource.checkExist(with: name) {
+                    cell.detailTextLabel?.text = "✓"
+                } else {
+                    cell.detailTextLabel?.text = "𐄂"
+                }
+            }
+            
         }
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if transactionAdditionViewControllerDataSource != nil {
-            if let bunnys = bunnys {
-                let bunny = bunnys[indexPath.row]
-                transactionAdditionViewControllerDataSource!.bunny = bunny
-                self.navigationController?.popViewController(animated: true)
+        if dataSource != nil, let bunnys = bunnys {
+            let bunny = bunnys[indexPath.row]
+            if mode == .Event, let dataSource = dataSource, let name = bunny.name, dataSource.checkExist(with: name) {
+                return
             }
+            dataSource!.bunny = bunny
+            self.dismiss(animated: true, completion: nil)
         }
     }
     
@@ -58,7 +75,13 @@ class BunnyManageViewController: UIViewController, BunnyManageViewControllerDele
     
     let alertController = CompleteAlertController()
     
-    var transactionAdditionViewControllerDataSource: TransactionAdditionViewControllerDataSource?
+    var dataSource: BunnyManageViewControllerDataSource?
+    
+    var mode: Mode = .Legacy
+    
+    enum Mode {
+        case Legacy, Event
+    }
 
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var bunnyTableView: UITableView!
@@ -66,7 +89,6 @@ class BunnyManageViewController: UIViewController, BunnyManageViewControllerDele
         super.viewDidLoad()
         bunnyTableView.delegate = self
         bunnyTableView.dataSource = self
-        bunnyTableView.register(UITableViewCell.self, forCellReuseIdentifier: "BunnyCell")
         
         fetchBunnys()
         

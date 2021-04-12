@@ -21,8 +21,6 @@ class TagAdditionViewController: UIViewController, TagAdditionViewControllerData
     
     var tagViewControllerDelegate: TagViewControllerDelegate?
     
-    var tagViewControllerDataSource: TagViewControllerDataSource?
-    
     var alertController: AlertController?
     
     @IBOutlet weak var nameTextField: UITextField!
@@ -46,17 +44,10 @@ class TagAdditionViewController: UIViewController, TagAdditionViewControllerData
     }
     
     @objc func handleSubmit() {
-        if let dataSource = tagViewControllerDataSource, let tags = dataSource.tags {
-            if tags.firstIndex(where: { tag -> Bool in
-                tag.name == self.nameTextField.text
-            }) != nil {
-                if let alertController = self.alertController {
-                    self.present(alertController.get(with: "Failed", instruction: "Duplicated tag detected.", handler: nil), animated: true, completion: nil)
-                }
-                return
+        if let delegate = tagViewControllerDelegate, let newName = nameTextField.text, !delegate.contains(tagName: newName) {
+            if let alertController = self.alertController {
+                self.present(alertController.get(with: "Failed", instruction: "Duplicated tag detected.", handler: nil), animated: true, completion: nil)
             }
-        }
-        if let delegate = tagViewControllerDelegate {
             let tag = NSEntityDescription.insertNewObject(forEntityName: "EBTag", into: delegate.context) as! EBTag
             tag.name = nameTextField.text
             tag.parent = parentTag

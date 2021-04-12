@@ -32,4 +32,16 @@ extension String {
         let end = index(start, offsetBy: range.upperBound - range.lowerBound)
         return String(self[start ..< end])
     }
+    
+    mutating func insert(_ string:String, _ pos:Int) {
+        let backward = pos < 0
+        let offset = backward ? -pos : pos
+        if offset < self.count {
+            if backward {
+                self.insert(contentsOf: string, at:self.index(self.startIndex, offsetBy: self.count - offset) )
+            } else {
+                self.insert(contentsOf: string, at:self.index(self.startIndex, offsetBy: offset) )
+            }
+        }
+    }
 }

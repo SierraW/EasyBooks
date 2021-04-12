@@ -28,6 +28,21 @@
 		3B349ECB261A83BE00A22B31 /* TagAdditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349EC9261A83BE00A22B31 /* TagAdditionViewController.xib */; };
 		3B349ED1261A8E4A00A22B31 /* ButtonStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349ED0261A8E4A00A22B31 /* ButtonStyler.swift */; };
 		3B349EEB261AA84300A22B31 /* TagTreeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349EEA261AA84300A22B31 /* TagTreeGenerator.swift */; };
+		3B349EF5261B5E9600A22B31 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349EF3261B5E9600A22B31 /* EventViewController.swift */; };
+		3B349EF6261B5E9600A22B31 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349EF4261B5E9600A22B31 /* EventViewController.xib */; };
+		3B349F08261FC76400A22B31 /* BunnyBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349F06261FC76400A22B31 /* BunnyBillViewController.swift */; };
+		3B349F09261FC76400A22B31 /* BunnyBillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349F07261FC76400A22B31 /* BunnyBillViewController.xib */; };
+		3B349F19261FDFDC00A22B31 /* EventAdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349F17261FDFDC00A22B31 /* EventAdditionViewController.swift */; };
+		3B349F1A261FDFDC00A22B31 /* EventAdditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349F18261FDFDC00A22B31 /* EventAdditionViewController.xib */; };
+		3B349F202622256B00A22B31 /* AmountTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349F1F2622256B00A22B31 /* AmountTextFieldController.swift */; };
+		3B349F312623697500A22B31 /* BunnyBillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349F302623697500A22B31 /* BunnyBillTableViewCell.swift */; };
+		3B349F3B26236E0100A22B31 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349F3A26236E0100A22B31 /* HomeTabViewController.swift */; };
+		3B349F432623703C00A22B31 /* TransactionAdditionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349F422623703C00A22B31 /* TransactionAdditionView.xib */; };
+		3B349F4B26237C9F00A22B31 /* TransactionPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349F4A26237C9F00A22B31 /* TransactionPresentationController.swift */; };
+		3B349F5026238DDE00A22B31 /* DecimalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349F4F26238DDE00A22B31 /* DecimalExtension.swift */; };
+		3B349F5626239C5400A22B31 /* EventAmountSplitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349F5426239C5400A22B31 /* EventAmountSplitterViewController.swift */; };
+		3B349F5726239C5400A22B31 /* EventAmountSplitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349F5526239C5400A22B31 /* EventAmountSplitterViewController.xib */; };
+		3B349F5C2623A63C00A22B31 /* DebugCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B349F5B2623A63C00A22B31 /* DebugCellView.xib */; };
 		3B64B29F25F32EBE004DDF95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B29E25F32EBE004DDF95 /* AppDelegate.swift */; };
 		3B64B2A125F32EBE004DDF95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2A025F32EBE004DDF95 /* SceneDelegate.swift */; };
 		3B64B2A325F32EBE004DDF95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64B2A225F32EBE004DDF95 /* ViewController.swift */; };
@@ -83,6 +98,21 @@
 		3B349EC9261A83BE00A22B31 /* TagAdditionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagAdditionViewController.xib; sourceTree = "<group>"; };
 		3B349ED0261A8E4A00A22B31 /* ButtonStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyler.swift; sourceTree = "<group>"; };
 		3B349EEA261AA84300A22B31 /* TagTreeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTreeGenerator.swift; sourceTree = "<group>"; };
+		3B349EF3261B5E9600A22B31 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		3B349EF4261B5E9600A22B31 /* EventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
+		3B349F06261FC76400A22B31 /* BunnyBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyBillViewController.swift; sourceTree = "<group>"; };
+		3B349F07261FC76400A22B31 /* BunnyBillViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BunnyBillViewController.xib; sourceTree = "<group>"; };
+		3B349F17261FDFDC00A22B31 /* EventAdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAdditionViewController.swift; sourceTree = "<group>"; };
+		3B349F18261FDFDC00A22B31 /* EventAdditionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventAdditionViewController.xib; sourceTree = "<group>"; };
+		3B349F1F2622256B00A22B31 /* AmountTextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTextFieldController.swift; sourceTree = "<group>"; };
+		3B349F302623697500A22B31 /* BunnyBillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyBillTableViewCell.swift; sourceTree = "<group>"; };
+		3B349F3A26236E0100A22B31 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		3B349F422623703C00A22B31 /* TransactionAdditionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionAdditionView.xib; sourceTree = "<group>"; };
+		3B349F4A26237C9F00A22B31 /* TransactionPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPresentationController.swift; sourceTree = "<group>"; };
+		3B349F4F26238DDE00A22B31 /* DecimalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalExtension.swift; sourceTree = "<group>"; };
+		3B349F5426239C5400A22B31 /* EventAmountSplitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAmountSplitterViewController.swift; sourceTree = "<group>"; };
+		3B349F5526239C5400A22B31 /* EventAmountSplitterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventAmountSplitterViewController.xib; sourceTree = "<group>"; };
+		3B349F5B2623A63C00A22B31 /* DebugCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DebugCellView.xib; sourceTree = "<group>"; };
 		3B64B29B25F32EBE004DDF95 /* EasyBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B64B29E25F32EBE004DDF95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B64B2A025F32EBE004DDF95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +167,8 @@
 			children = (
 				3B015B9E2612B4B100AAB9B1 /* TransactionListViewController.swift */,
 				3B015BA32612C20600AAB9B1 /* TransactionAdditionViewController.swift */,
+				3B349F422623703C00A22B31 /* TransactionAdditionView.xib */,
+				3B349F4A26237C9F00A22B31 /* TransactionPresentationController.swift */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -166,6 +198,12 @@
 		3B015B8D2612834E00AAB9B1 /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				3B349EF3261B5E9600A22B31 /* EventViewController.swift */,
+				3B349EF4261B5E9600A22B31 /* EventViewController.xib */,
+				3B349F17261FDFDC00A22B31 /* EventAdditionViewController.swift */,
+				3B349F18261FDFDC00A22B31 /* EventAdditionViewController.xib */,
+				3B349F5426239C5400A22B31 /* EventAmountSplitterViewController.swift */,
+				3B349F5526239C5400A22B31 /* EventAmountSplitterViewController.xib */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -173,6 +211,7 @@
 		3B015B8E2612835E00AAB9B1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3B349F1E2622255100A22B31 /* TextField */,
 				3B349ECF261A8E1800A22B31 /* Button */,
 				3B349EBD261A834B00A22B31 /* Tag */,
 				3B349EB4261A770200A22B31 /* extension */,
@@ -195,6 +234,10 @@
 		3B015B902612837200AAB9B1 /* BunnyBill */ = {
 			isa = PBXGroup;
 			children = (
+				3B349F06261FC76400A22B31 /* BunnyBillViewController.swift */,
+				3B349F07261FC76400A22B31 /* BunnyBillViewController.xib */,
+				3B349F302623697500A22B31 /* BunnyBillTableViewCell.swift */,
+				3B349F5B2623A63C00A22B31 /* DebugCellView.xib */,
 			);
 			path = BunnyBill;
 			sourceTree = "<group>";
@@ -220,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				3B349EB5261A771C00A22B31 /* StringExtension.swift */,
+				3B349F4F26238DDE00A22B31 /* DecimalExtension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -238,6 +282,14 @@
 				3B349ED0261A8E4A00A22B31 /* ButtonStyler.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		3B349F1E2622255100A22B31 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				3B349F1F2622256B00A22B31 /* AmountTextFieldController.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 		3B64B29225F32EBE004DDF95 = {
@@ -328,6 +380,7 @@
 				3B7DEA3025F354CB00AC5BD1 /* HTMainViewController.swift */,
 				3B7DEA5625F4644200AC5BD1 /* EventReportView.xib */,
 				3B7DEA5B25F4655400AC5BD1 /* EventReportView.swift */,
+				3B349F3A26236E0100A22B31 /* HomeTabViewController.swift */,
 			);
 			path = HomeTab;
 			sourceTree = "<group>";
@@ -437,13 +490,19 @@
 			files = (
 				3B349EA9261A6D0C00A22B31 /* CurrencyUnitViewController.xib in Resources */,
 				3B349ECB261A83BE00A22B31 /* TagAdditionViewController.xib in Resources */,
+				3B349F5C2623A63C00A22B31 /* DebugCellView.xib in Resources */,
 				3B349EB0261A71BC00A22B31 /* CurrencyUnitAdditionViewController.xib in Resources */,
 				3B64B2AE25F32EBF004DDF95 /* LaunchScreen.storyboard in Resources */,
+				3B349F09261FC76400A22B31 /* BunnyBillViewController.xib in Resources */,
 				3B349EC1261A83AB00A22B31 /* TagViewController.xib in Resources */,
 				3B7DEA6E25F48BDD00AC5BD1 /* EventReportView.xib in Resources */,
+				3B349F5726239C5400A22B31 /* EventAmountSplitterViewController.xib in Resources */,
+				3B349F432623703C00A22B31 /* TransactionAdditionView.xib in Resources */,
 				3B015BC02613C4F900AAB9B1 /* BunnyManageViewController.xib in Resources */,
+				3B349EF6261B5E9600A22B31 /* EventViewController.xib in Resources */,
 				3B015BB02613C33E00AAB9B1 /* BunnyAdditonViewController.xib in Resources */,
 				3BBA121925F34D4400A4ACE8 /* HomeTab.storyboard in Resources */,
+				3B349F1A261FDFDC00A22B31 /* EventAdditionViewController.xib in Resources */,
 				3B64B2AB25F32EBF004DDF95 /* Assets.xcassets in Resources */,
 				3B015BA92612C64000AAB9B1 /* ViewController.xib in Resources */,
 				3B64B2A625F32EBE004DDF95 /* Main.storyboard in Resources */,
@@ -471,8 +530,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B349F08261FC76400A22B31 /* BunnyBillViewController.swift in Sources */,
 				3B349E9B261A4E9900A22B31 /* AlertController.swift in Sources */,
 				3B015B9F2612B4B100AAB9B1 /* TransactionListViewController.swift in Sources */,
+				3B349EF5261B5E9600A22B31 /* EventViewController.swift in Sources */,
 				3B349EA8261A6D0C00A22B31 /* CurrencyUnitViewController.swift in Sources */,
 				3B349ECA261A83BE00A22B31 /* TagAdditionViewController.swift in Sources */,
 				3B349EC0261A83AB00A22B31 /* TagViewController.swift in Sources */,
@@ -484,13 +545,20 @@
 				3B7DEA3125F354CB00AC5BD1 /* HTMainViewController.swift in Sources */,
 				3B349ED1261A8E4A00A22B31 /* ButtonStyler.swift in Sources */,
 				3B015BBF2613C4F900AAB9B1 /* BunnyManageViewController.swift in Sources */,
+				3B349F19261FDFDC00A22B31 /* EventAdditionViewController.swift in Sources */,
 				3B015BA42612C20600AAB9B1 /* TransactionAdditionViewController.swift in Sources */,
+				3B349F312623697500A22B31 /* BunnyBillTableViewCell.swift in Sources */,
+				3B349F4B26237C9F00A22B31 /* TransactionPresentationController.swift in Sources */,
 				3B64B29F25F32EBE004DDF95 /* AppDelegate.swift in Sources */,
 				3B015BAF2613C33E00AAB9B1 /* BunnyAdditonViewController.swift in Sources */,
+				3B349F5026238DDE00A22B31 /* DecimalExtension.swift in Sources */,
 				3B64B2A925F32EBE004DDF95 /* EasyBooks.xcdatamodeld in Sources */,
+				3B349F3B26236E0100A22B31 /* HomeTabViewController.swift in Sources */,
 				3B64B2A125F32EBE004DDF95 /* SceneDelegate.swift in Sources */,
+				3B349F202622256B00A22B31 /* AmountTextFieldController.swift in Sources */,
 				3B349EEB261AA84300A22B31 /* TagTreeGenerator.swift in Sources */,
 				3B7DEA5C25F4655400AC5BD1 /* EventReportView.swift in Sources */,
+				3B349F5626239C5400A22B31 /* EventAmountSplitterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,33 +3,36 @@
     <entity name="EBBunny" representedClassName="EBBunny" syncable="YES" codeGenerationType="class">
         <attribute name="des" attributeType="String" defaultValueString=""/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
-        <relationship name="bunnyBill" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBBunnyBill" inverseName="bunny" inverseEntity="EBBunnyBill"/>
-        <relationship name="transaction" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBTransaction" inverseName="bunny" inverseEntity="EBTransaction"/>
+        <relationship name="bunnyBills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBBunnyBill" inverseName="bunny" inverseEntity="EBBunnyBill"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBTransaction" inverseName="bunny" inverseEntity="EBTransaction"/>
     </entity>
     <entity name="EBBunnyBill" representedClassName="EBBunnyBill" syncable="YES" codeGenerationType="class">
         <attribute name="amount" attributeType="Decimal" defaultValueString="0"/>
-        <relationship name="bunny" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBBunny" inverseName="bunnyBill" inverseEntity="EBBunny"/>
+        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="bunny" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBBunny" inverseName="bunnyBills" inverseEntity="EBBunny"/>
         <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBEvent" inverseName="bills" inverseEntity="EBEvent"/>
-        <relationship name="unit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBCurrencyUnit" inverseName="bunnyBill" inverseEntity="EBCurrencyUnit"/>
+        <relationship name="unit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBCurrencyUnit" inverseName="bunnyBills" inverseEntity="EBCurrencyUnit"/>
     </entity>
     <entity name="EBCurrencyUnit" representedClassName="EBCurrencyUnit" syncable="YES" codeGenerationType="class">
         <attribute name="name" attributeType="String" defaultValueString="Custom Currency"/>
         <attribute name="prefix" attributeType="String" defaultValueString="CC"/>
         <attribute name="symbol" attributeType="String" defaultValueString="$"/>
-        <relationship name="bunnyBill" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBBunnyBill" inverseName="unit" inverseEntity="EBBunnyBill"/>
-        <relationship name="transaction" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBTransaction" inverseName="unit" inverseEntity="EBTransaction"/>
+        <relationship name="bunnyBills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBBunnyBill" inverseName="unit" inverseEntity="EBBunnyBill"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBTransaction" inverseName="unit" inverseEntity="EBTransaction"/>
     </entity>
     <entity name="EBEvent" representedClassName="EBEvent" syncable="YES" codeGenerationType="class">
         <attribute name="completed" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="dateCreated" attributeType="Date" defaultDateTimeInterval="636697800" usesScalarValueType="NO"/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
         <relationship name="bills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBBunnyBill" inverseName="event" inverseEntity="EBBunnyBill"/>
+        <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBTag" inverseName="events" inverseEntity="EBTag"/>
         <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBTransaction" inverseName="event" inverseEntity="EBTransaction"/>
     </entity>
     <entity name="EBTag" representedClassName="EBTag" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="parent" optional="YES" attributeType="String"/>
-        <relationship name="transaction" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBTransaction" inverseName="tag" inverseEntity="EBTransaction"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBEvent" inverseName="tag" inverseEntity="EBEvent"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EBTransaction" inverseName="tag" inverseEntity="EBTransaction"/>
     </entity>
     <entity name="EBTransaction" representedClassName="EBTransaction" syncable="YES" codeGenerationType="class">
         <attribute name="amount" attributeType="Decimal" defaultValueString="0.0"/>
@@ -37,17 +40,17 @@
         <attribute name="dateCreated" attributeType="Date" defaultDateTimeInterval="636697500" usesScalarValueType="NO"/>
         <attribute name="des" attributeType="String" defaultValueString=""/>
         <attribute name="expectedPaymentDate" attributeType="Date" defaultDateTimeInterval="636697440" usesScalarValueType="NO"/>
-        <relationship name="bunny" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBBunny" inverseName="transaction" inverseEntity="EBBunny"/>
+        <relationship name="bunny" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBBunny" inverseName="transactions" inverseEntity="EBBunny"/>
         <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBEvent" inverseName="transactions" inverseEntity="EBEvent"/>
-        <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBTag" inverseName="transaction" inverseEntity="EBTag"/>
-        <relationship name="unit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBCurrencyUnit" inverseName="transaction" inverseEntity="EBCurrencyUnit"/>
+        <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBTag" inverseName="transactions" inverseEntity="EBTag"/>
+        <relationship name="unit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EBCurrencyUnit" inverseName="transactions" inverseEntity="EBCurrencyUnit"/>
     </entity>
     <elements>
         <element name="EBBunny" positionX="-18" positionY="90" width="128" height="89"/>
-        <element name="EBBunnyBill" positionX="0" positionY="99" width="128" height="89"/>
+        <element name="EBBunnyBill" positionX="0" positionY="99" width="128" height="104"/>
         <element name="EBCurrencyUnit" positionX="-54" positionY="9" width="128" height="104"/>
-        <element name="EBEvent" positionX="18" positionY="108" width="128" height="104"/>
-        <element name="EBTag" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="EBEvent" positionX="18" positionY="108" width="128" height="119"/>
+        <element name="EBTag" positionX="-63" positionY="-18" width="128" height="89"/>
         <element name="EBTransaction" positionX="-36" positionY="36" width="128" height="164"/>
     </elements>
 </model>

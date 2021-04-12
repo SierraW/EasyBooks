@@ -24,6 +24,14 @@ class TransactionListViewController: UIViewController, UITableViewDelegate, UITa
         return cell
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .normal, title: "Edit") { (action, view, _) in
+            print("here")
+        }
+        let edit = UISwipeActionsConfiguration(actions: [action])
+        return edit
+    }
+    
 
     @IBOutlet weak var transactionTableView: UITableView!
     

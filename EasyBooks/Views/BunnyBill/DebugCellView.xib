@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ae1-7Q-KMa">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ae1-7Q-KMa" id="0Fx-o2-B4x">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mim-ft-cy9">
+                        <rect key="frame" x="20" y="11.5" width="44" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cherie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URq-kh-WmW">
+                        <rect key="frame" x="80" y="11.5" width="50" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dme-F1-SSb">
+                        <rect key="frame" x="294" y="5" width="100" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="2OK-CF-shs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="URq-kh-WmW" firstAttribute="centerY" secondItem="0Fx-o2-B4x" secondAttribute="centerY" id="3xY-3p-jVI"/>
+                    <constraint firstItem="mim-ft-cy9" firstAttribute="centerY" secondItem="0Fx-o2-B4x" secondAttribute="centerY" id="4sT-ft-LSe"/>
+                    <constraint firstItem="mim-ft-cy9" firstAttribute="leading" secondItem="0Fx-o2-B4x" secondAttribute="leading" constant="20" symbolic="YES" id="CQe-iP-bUL"/>
+                    <constraint firstItem="URq-kh-WmW" firstAttribute="leading" secondItem="mim-ft-cy9" secondAttribute="leading" constant="60" id="FnS-4h-YnX"/>
+                    <constraint firstAttribute="trailing" secondItem="dme-F1-SSb" secondAttribute="trailing" constant="20" symbolic="YES" id="pcw-wH-dF8"/>
+                    <constraint firstItem="dme-F1-SSb" firstAttribute="centerY" secondItem="0Fx-o2-B4x" secondAttribute="centerY" id="t5h-5T-jEz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="699" y="123"/>
+        </tableViewCell>
+    </objects>
+</document>

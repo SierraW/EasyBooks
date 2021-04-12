@@ -13,6 +13,10 @@ protocol CurrencyUnitViewControllerDelegate {
     func fetchCurrencyUnits()
 }
 
+protocol CurrencyUnitViewControllerDataSource {
+    var currencyUnit: EBCurrencyUnit? { get set }
+}
+
 class CurrencyUnitViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CurrencyUnitViewControllerDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,9 +63,9 @@ class CurrencyUnitViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             handleAddNewCU()
-        } else if transactionAdditionViewControllerDataSource != nil, let currencyUnits = currencyUnits {
+        } else if dataSource != nil, let currencyUnits = currencyUnits {
             let unit = currencyUnits[indexPath.row]
-            transactionAdditionViewControllerDataSource!.unit = unit
+            dataSource!.currencyUnit = unit
             dismiss(animated: true, completion: nil)
         }
         tableView.cellForRow(at: indexPath)?.isSelected = false
@@ -77,7 +81,7 @@ class CurrencyUnitViewController: UIViewController, UITableViewDelegate, UITable
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    var transactionAdditionViewControllerDataSource: TransactionAdditionViewControllerDataSource?
+    var dataSource: CurrencyUnitViewControllerDataSource?
     
     override func viewDidLoad() {
         super.viewDidLoad()
