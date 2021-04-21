@@ -38,7 +38,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="u8o-0X-aPs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.94457133309999997" blue="0.78749142969999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Me" id="vbI-HD-3N8"/>
                 </viewController>
@@ -60,7 +60,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9el-PM-BEH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.94457133309999997" blue="0.78749142969999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Ao5-9N-zp2" firstAttribute="top" secondItem="9el-PM-BEH" secondAttribute="top" constant="30" id="7x5-8e-ild"/>
                             <constraint firstItem="Ao5-9N-zp2" firstAttribute="centerX" secondItem="9el-PM-BEH" secondAttribute="centerX" id="90p-uh-OPK"/>
@@ -100,7 +100,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mux-fH-Ti0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.94457133309999997" blue="0.78749142969999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Transactions" id="MQO-FB-reF"/>
                     <connections>
@@ -211,7 +211,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wX6-Dd-e3j"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.94457133312393171" blue="0.78749142968677488" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="7q3-0G-rBD" firstAttribute="centerX" secondItem="wX6-Dd-e3j" secondAttribute="centerX" id="YCO-sL-bis"/>
                             <constraint firstItem="wX6-Dd-e3j" firstAttribute="bottom" secondItem="7q3-0G-rBD" secondAttribute="bottom" constant="30" id="itN-HS-dwK"/>

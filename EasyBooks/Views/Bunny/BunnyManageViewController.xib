@@ -40,7 +40,7 @@
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="1" green="0.94457133309999997" blue="0.78749142969999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Iao-25-RNR" secondAttribute="trailing" constant="20" id="DMs-RB-SED"/>
                 <constraint firstItem="Iao-25-RNR" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="20" id="MLD-7i-Bci"/>
