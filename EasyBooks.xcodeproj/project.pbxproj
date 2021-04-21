@@ -57,6 +57,7 @@
 		3B7DEA5C25F4655400AC5BD1 /* EventReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DEA5B25F4655400AC5BD1 /* EventReportView.swift */; };
 		3B7DEA6E25F48BDD00AC5BD1 /* EventReportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7DEA5625F4644200AC5BD1 /* EventReportView.xib */; };
 		3BBA121925F34D4400A4ACE8 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBA121825F34D4400A4ACE8 /* HomeTab.storyboard */; };
+		C1007714262E72CA005ED0E2 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1007713262E72CA005ED0E2 /* Speech.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		3B7DEA5625F4644200AC5BD1 /* EventReportView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventReportView.xib; sourceTree = "<group>"; };
 		3B7DEA5B25F4655400AC5BD1 /* EventReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventReportView.swift; sourceTree = "<group>"; };
 		3BBA121825F34D4400A4ACE8 /* HomeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		C1007713262E72CA005ED0E2 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1007714262E72CA005ED0E2 /* Speech.framework in Frameworks */,
 				3B64B2D725F33113004DDF95 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +355,7 @@
 		3B64B2D525F33113004DDF95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1007713262E72CA005ED0E2 /* Speech.framework */,
 				3B64B2D625F33113004DDF95 /* CloudKit.framework */,
 			);
 			name = Frameworks;

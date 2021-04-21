@@ -15,7 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         label.text = "View"
+       
     }
+    
 
 
 }

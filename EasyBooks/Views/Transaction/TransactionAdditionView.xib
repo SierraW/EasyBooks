@@ -16,6 +16,7 @@
                 <outlet property="bunnyButton" destination="aZI-DM-Dl2" id="aGy-Bq-sP0"/>
                 <outlet property="descriptionTextField" destination="Vtx-Vq-tid" id="noP-zm-LWB"/>
                 <outlet property="eventButton" destination="bt6-xL-OwI" id="Ke5-9z-B15"/>
+                <outlet property="recordButton" destination="d6T-SB-2T3" id="HTT-GG-i5E"/>
                 <outlet property="tagButton" destination="6vC-Gk-9GE" id="fAp-up-9AR"/>
                 <outlet property="unitButton" destination="pge-EX-oQV" id="Jc7-lD-KLu"/>
                 <outlet property="view" destination="iN0-l3-epB" id="7AR-1s-IcI"/>
@@ -26,12 +27,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Transaction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozx-bP-J5i">
-                    <rect key="frame" x="143.5" y="299" width="127.5" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-K5-yQp">
                     <rect key="frame" x="30" y="699.5" width="354" height="62.5"/>
                     <subviews>
@@ -129,6 +124,20 @@
                         <constraint firstItem="9SD-uc-eWy" firstAttribute="leading" secondItem="eGU-P5-dQF" secondAttribute="leading" id="tt4-eK-keA"/>
                     </constraints>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="New Transaction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozx-bP-J5i">
+                    <rect key="frame" x="144" y="268" width="127.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6T-SB-2T3">
+                    <rect key="frame" x="168" y="428" width="34" height="41.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Record" image="record"/>
+                    <connections>
+                        <action selector="recordBTNWithSender:" destination="-1" eventType="touchUpInside" id="tf1-Gf-sl8"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -152,10 +161,11 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hdg-K5-yQp" secondAttribute="trailing" constant="30" id="qSZ-qc-Nge"/>
                 <constraint firstItem="hdg-K5-yQp" firstAttribute="top" secondItem="eGU-P5-dQF" secondAttribute="bottom" constant="60" id="wjK-Bj-Egp"/>
             </constraints>
-            <point key="canvasLocation" x="165" y="35"/>
+            <point key="canvasLocation" x="163.768115942029" y="34.821428571428569"/>
         </view>
     </objects>
     <resources>
+        <image name="record" width="752" height="980"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -14,7 +14,8 @@ class HomeTabViewController: UIViewController, UIViewControllerTransitioningDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         transactionAdditionButton.addTarget(self, action: #selector(presentTransactionVC), for: .touchUpInside)
         eventAdditionButton.addTarget(self, action: #selector(presentEventVC), for: .touchUpInside)
     }

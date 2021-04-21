@@ -7,8 +7,10 @@
 
 import UIKit
 import CoreData
+import Speech
+import AVFoundation
 
-class TransactionAdditionViewController: UIViewController, CurrencyUnitViewControllerDataSource, BunnyManageViewControllerDataSource, TagViewControllerDataSource, UITextFieldDelegate, EventViewControllerDataSource {
+class TransactionAdditionViewController: UIViewController, CurrencyUnitViewControllerDataSource, BunnyManageViewControllerDataSource, TagViewControllerDataSource, UITextFieldDelegate, EventViewControllerDataSource, AVAudioRecorderDelegate {
     
     func checkExist(with name: String) -> Bool {
         return false
@@ -47,7 +49,24 @@ class TransactionAdditionViewController: UIViewController, CurrencyUnitViewContr
     @IBOutlet weak var unitButton: UIButton!
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var addButton: UIButton!
+    
+    ///
+    // Recored audio
+    private var file: Int = 0
+    private var audioSession: AVAudioSession!
+    private var audioRecorder: AVAudioRecorder!
+    
+    // Convert speech to text
+    private let speechRecognizer = SFSpeechRecognizer(locale:
+                Locale(identifier: "en-US"))!
+    private var speechRecognitionRequest:
+            SFSpeechAudioBufferRecognitionRequest?
+    private var speechRecognitionTask: SFSpeechRecognitionTask?
+    private let audioEngine = AVAudioEngine()
+    private var outputText: String?
+    ///
     
     let alertController: AlertController? = CompleteAlertController()
     let amountTextFieldController = AmountTextFieldController()
@@ -65,6 +84,10 @@ class TransactionAdditionViewController: UIViewController, CurrencyUnitViewContr
         tagButton.addTarget(self, action: #selector(presentTagManageVC), for: .touchUpInside)
         eventButton.addTarget(self, action: #selector(presentEventVC), for: .touchUpInside)
         bunnyButton.isHidden = true
+        
+        self.audioSessionPermission()
+        self.requestTranscribePermissions()
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -143,6 +166,169 @@ class TransactionAdditionViewController: UIViewController, CurrencyUnitViewContr
         vc.dataSource = self
         self.present(vc, animated: true, completion: nil)
     }
+    
+    ///
+    
+    func requestTranscribePermissions() {
+        SFSpeechRecognizer.requestAuthorization { (authStatus) in
+                switch authStatus {
+                case .authorized:
+                    print("Good to go!")
+                case .denied:
+                    print("Speech recognition authorization denied")
+                case .restricted:
+                        print("Not available on this device")
+                default:
+                    print("Transcription permission was declined.")
+                
+            }
+        }
+    }
+    
+    func audioSessionPermission(){
+        audioSession = AVAudioSession.sharedInstance()
+        
+        do{
+            try AVAudioSession.sharedInstance().setCategory(.record, mode: .default, options: [])
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch{
+            print(error)
+        }
+        
+        // Check permission
+        AVAudioSession.sharedInstance().requestRecordPermission{ (hasPermission) in
+            if hasPermission{
+                let alertController = UIAlertController(title: "Press mic to speak", message: "Please record for description", preferredStyle: .alert)
+                let alertAction = UIAlertAction(title: "OK", style: .default) {
+                    UIAlertAction in
+                    print("Recording....")
+                }
+                
+                alertController.addAction(alertAction)
+                self.present(alertController, animated: true)
+            }
+        }
+        
+        // check any saved text file
+        if let num: Int = UserDefaults.standard.object(forKey: "recording") as? Int{
+            file = num
+        }
+    }
+    
+    @IBAction func recordBTN(sender: Any){
+        if self.audioEngine.isRunning {
+            self.audioEngine.stop()
+            self.speechRecognitionRequest?.endAudio()
+            self.speechRecognitionTask?.cancel()
+            self.speechRecognitionTask = nil
+        } else {
+            self.speechRecorder()
+        }
+        self.audioRecording()
+    }
+    
+    // get path to dir
+    func getDir() -> URL{
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentDir = path[0]
+        
+        return documentDir
+    }
+    
+    func audioRecording(){
+        
+        if audioRecorder == nil {
+            file = 1
+            let filename = getDir().appendingPathComponent("\(file).m4a")
+            let settings = [AVSampleRateKey: 12000,
+                            AVNumberOfChannelsKey: 1,
+                            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+                            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue]
+            
+            // recording started
+            do {
+                audioRecorder = try AVAudioRecorder(url: filename, settings: settings)
+                audioRecorder.delegate = self
+                audioRecorder.record()
+                print("Recording now")
+            }
+            catch {
+                let alertController = UIAlertController(title: "Error", message: "Please try again", preferredStyle: .alert)
+                let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                
+                alertController.addAction(alertAction)
+                self.present(alertController, animated: true)
+            }
+        } else{ // stop recording
+            audioRecorder.stop()
+            audioRecorder = nil
+            
+            // saving...
+            UserDefaults.standard.set(file, forKey: "recording")
+            let alertController = UIAlertController(title: "Message", message: "Recording saved", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "OK", style: .default, handler: { action in
+                self.descriptionTextField.text = self.outputText
+            })
+            
+            
+            
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true)
+            
+        }
+    }
+    func speechRecorder(){
+        // Stop task if running state
+        if speechRecognitionTask != nil {
+            speechRecognitionTask?.cancel()
+            speechRecognitionTask = nil
+        }
+        
+        speechRecognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        
+        let input = audioEngine.inputNode
+        
+        guard let speechRecognitionRequest = speechRecognitionRequest else {
+            print("There was an error in recognition")
+            fatalError("There was an error in recognition")
+        }
+        
+        speechRecognitionRequest.shouldReportPartialResults = true
+        
+        speechRecognitionTask = speechRecognizer.recognitionTask(with: speechRecognitionRequest, resultHandler: {(result, error) in
+            
+            var textResult = false
+            
+            if result != nil {
+                self.outputText = result?.bestTranscription.formattedString
+                print(self.outputText!)
+                textResult = (result?.isFinal)!
+            }
+            
+            if error != nil || textResult {
+                self.speechRecognitionRequest = nil
+                self.speechRecognitionTask = nil
+                self.audioEngine.stop()
+                input.removeTap(onBus: 0)
+            }
+        })
+        
+        let recordFormat = input.outputFormat(forBus: 0)
+        input.installTap(onBus: 0, bufferSize: 1024, format: recordFormat) { (buffer, when) in
+            self.speechRecognitionRequest?.append(buffer)
+        }
+        
+        self.audioEngine.prepare()
+        
+        do {
+            try self.audioEngine.start()
+        } catch {
+            print("Audio Engine error")
+        }
+        
+        
+    }
+    
     
     /*
     // MARK: - Navigation

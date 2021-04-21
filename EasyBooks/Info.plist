@@ -66,5 +66,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Transcrip input speech</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Record input </string>
 </dict>
 </plist>
